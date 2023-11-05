@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+        <link rel="icon" href="./assets/img/logo/final_logo_w.png">
+
+        <title>KOFI NEKA</title>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo" style="display: flex; justify-content: center; align-items: center;">
+                    <img id="light" src="./assets/img/logo/final_logo.png" width="50px"/>
+                    <img class="dark-theme" id="dark" src="./assets/img/logo/final_logo_w.png" width="50px"/></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#share" class="nav__link">About Me</a></li>
+                        <li class="nav__item"><a href="#decoration" class="nav__link">My Projects</a></li>
+                        <li class="nav__item"><a href="#accessory" class="nav__link">Skills</a></li>
+
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+
+                        <li class="nav__item"><a href="https://drive.google.com/file/d/11i1xSi2fWyKLadVW0ak2CsXGAbXf22JS/view?usp=sharing" target="_blank" class="nav__link">Resume</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img">
+                        <div class="profile">
+                            <img id="profile_p" src="assets/img/photo_1.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 id="h_name" class="home__title">Hi ! <br> I'm <span class="name">Abesolom <sup> </sup></span> <span class="name alias">Kofi<sup><sub><sup><sub><sup> [alias]</sup></sub></sup></sub></sup></span> </h1>
+                        <p class="home__description">FULL-STACK DEVELOPER</p>
+                        <a href="mailto: anekahiwot@gmail.com" target="_blank" class="button">Contact Me</a>
+                        <ul>
+                          <li>
+                            <a href="https://github.com/abneka" target="_blank" class="footer__social"><i class='bx bxl-github'></i></a>
+                            <a href="https://leetcode.com/anekahiwot" target="_blank" class="footer__social"><img id="l_leet" src="./assets/img/leetcode(1).svg" alt="" width="23px"></a>
+                            <a href="https://www.linkedin.com/in/abneka/" target="_blank" class="footer__social"><i class='bx bxl-linkedin'></i></a>
+                          </li>
+                        </ul>
+                    </div>   
+                </div>
+            </section>
+
+            <!--========== SHARE ==========-->
+            <section class="share section bd-container" id="share">
+                <div class="share__container bd-grid">
+                    <div class="share__data">
+                        <h2 class="section-title-center">About Me</h2>
+                        <p class="share__description">Full Stack Engineer with 3 years of experience in developing dynamic web applications. My expertise extends
+                          beyond development, encompassing a deep proficiency in data structures and algorithms. I am dedicated to
+                          pushing the boundaries of innovation and consistently delivering impactful solutions.</p>
+                        <p class="share__description">Here are a few technologies I’ve been working with recently:</p>
+                        <ul class="skills-list">
+                              <li>
+                                C#
+                            </li>
+                              <li>
+                                .NET Core
+                            </li>
+                            <li>
+                              Python
+                          </li>
+                            <li>
+                                javascript(ES6+)
+                            </li>
+                            <li>
+                                Typescript
+                            </li>
+                            <li>
+                                React
+                            </li>
+                            <li>
+                                Node.js
+                            </li>
+                            <li>
+                              C ++
+                          </li>
+
+                        </ul>
+                        <a href="https://drive.google.com/file/d/11i1xSi2fWyKLadVW0ak2CsXGAbXf22JS/view?usp=sharing" target="_blank" class="button">Download CV</a>
+                    </div>
+
+                    <div class="share__img">
+                        <img src="assets/img/picture_2.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--========== Features ==========-->
+            <section class="decoration section bd-container" id="decoration">
+                <h2 class="section-title">My Projects</h2>
+                <div class="decoration__container bd-grid">
+                    <div class="decoration__data" onclick="goto('h')">
+                        <img src="assets/img/feature_1.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Habtamu Coffee</h3>
+                        <a class="button button-link">Worked as freelance worker in habtamu coffee import and export plc company's web page</a>
+                    </div>
+
+                    <div class="decoration__data" onclick="goto('g')">
+                        <img src="assets/img/feature-2.jpg" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Github Finder</h3>
+                        <a  class="button button-link">Github finder app using react and github api</a>
+                    </div>
+
+                    <div class="decoration__data" onclick="goto('f')">
+                        <img src="assets/img/feature-3.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Feedback app</h3>
+                        <a  class="button button-link">feedback app made by using react, express and mongo</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== About ==========-->
+            <section class="accessory section bd-container" id="accessory">
+                
+                <h2 class="section-title">Skills </h2>
+
+                <div class="accessory__container bd-grid">
+                    
+                    <div class="accessory__content">
+                        <img src="./assets/img/react.png" alt="">
+                        <div class="container">
+                            <div >
+                              <ul class="skills-bar-container" style="width: 100%;">
+                                <label style="text-align: center;">REACT</label>
+                                <!-- <span class="percent"></span>
+                                <li>
+                                  <span class="progressbar progressblue" id="progress-php"></span>
+                                </li> -->
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="accessory__content">
+                      <img src="./assets/img/dot-net.png" alt="" style="margin: auto;">
+                      <div class="container">
+                          <div >
+                            <ul class="skills-bar-container" style="width: 100%;">
+
+                              <label>.NET Core</label>
+                              <!-- <span class="percent"></span>
+                              <li>
+                                <span class="progressbar progressblue" id="progress-jsjq"></span>
+                              </li> -->
+                        
+                            </ul>
+                          </div>
+                        </div>
+                  </div>
+
+                    <div class="accessory__content">
+                      <img src="./assets/img/c-sharp.svg" alt="">
+                      <div class="container">
+                          <div >
+                            <ul class="skills-bar-container" style="width: 100%;">
+
+                              <label>C #</label>
+                              <!-- <span class="percent"></span>
+                              <li>
+                                <span class="progressbar progressblue" id="progress-jsjq"></span>
+                              </li> -->
+                        
+                            </ul>
+                          </div>
+                        </div>
+                  </div>
+
+                    <div class="accessory__content">
+                        <img src="./assets/img/js.png" alt="">
+                        <div class="container">
+                            <div >
+                              <ul class="skills-bar-container" style="width: 100%;">
+
+                                <label>JavaScript</label>
+                                <!-- <span class="percent"></span>
+                                <li>
+                                  <span class="progressbar progressblue" id="progress-jsjq"></span>
+                                </li> -->
+                          
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="./assets/img/php.png" alt="">
+                        <div class="container">
+                            <div >
+                              <ul class="skills-bar-container" style="width: 100%;">
+                          
+                                <label>PHP</label>
+                                <!-- <span class="percent"></span>
+                                <li>
+                                  <span class="progressbar progressblue" id="progress-php"></span>
+                                </li> -->
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="./assets/img/html css.png" alt="">
+                        <div class="container">
+                            <div >
+                              <ul class="skills-bar-container" style="width: 100%;">
+                          
+                                <label>Html / css</label>
+                                <!-- <span class="percent"></span>
+                                <li>
+                                  <span class="progressbar progressblue" id="progress-htmlcss"></span>
+                                </li> -->
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="./assets/img/node.png" alt="">
+                        <div class="container">
+                            <div >
+                              <ul class="skills-bar-container" style="width: 100%;">
+                          
+                                <label>Node</label>
+                                <!-- <span class="percent"></span>
+                                <li>
+                                  <span class="progressbar progressblue" id="progress-php"></span>
+                                </li> -->
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="./assets/img/postman.png" alt="">
+                        <div class="container">
+                            <div >
+                              <ul class="skills-bar-container" style="width: 100%;">
+                          
+                                <label>Postman </label>
+                                <!-- <span class="percent"></span>
+                                <li>
+                                  <span class="progressbar progressblue" id="progress-php"></span>
+                                </li> -->
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="./assets/img/tailwinds.png" alt="">
+                        <div class="container">
+                            <div >
+                              <ul class="skills-bar-container" style="width: 100%;">
+                          
+                                <label>Tailwinds</label>
+                                <!-- <span class="percent"></span>
+                                <li>
+                                  <span class="progressbar progressblue" id="progress-php"></span>
+                                </li> -->
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img id="light_m" src="./assets/img/mongo.png"/>
+                        <img class="dark-theme" id="dark_m" src="./assets/img/mongo dark.png"/>
+                        <div class="container">
+                            <div >
+                              <ul class="skills-bar-container" style="width: 100%;">
+                          
+                                <label>Mongo DB</label>
+                                <!-- <span class="percent"></span>
+                                <li>
+                                  <span class="progressbar progressblue" id="progress-php"></span>
+                                </li> -->
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="./assets/img/sql.png" alt="">
+                        <div class="container">
+                            <div >
+                              <ul class="skills-bar-container" style="width: 100%;">
+                          
+                                <label>SQL</label>
+                                <!-- <span class="percent"></span>
+                                <li>
+                                  <span class="progressbar progressblue" id="progress-php"></span>
+                                </li> -->
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Abesolom Nekahiwot</a>
+                    </h3>
+                    <p class="footer__description">FULL-STACK DEVELOPER</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Go-to</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Home </a></li>
+                        <li><a href="#share" class="footer__link">About Me</a></li>
+                        <li><a href="#decoration" class="footer__link">My Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact Me</h3>
+                    <ul>
+                        <li><a href="#accessory" class="footer__link">Abesolom N.</a></li>
+                        <a href="https://github.com/abneka" target="_blank" class="footer__social"><i class='bx bxl-github'></i></a>
+                        <a href="https://leetcode.com/anekahiwot" target="_blank" class="footer__social"><img id="l_leet" src="./assets/img/leetcode(1).svg" alt="" width="23px"></a>
+                        <a href="https://www.linkedin.com/in/abneka/" target="_blank" class="footer__social"><i class='bx bxl-linkedin'></i></a>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p class="footer__copy">2023 &#169; Built by Abesolom N.</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+        <script>
+            function goto(comm) {
+                if (comm == 'g'){
+                    window.open('http://githubfinder.abneka.tech', '_blank');
+                }
+                else if (comm == 'h'){
+                    window.open('http://habtamucoffee.com', '_blank');
+                }
+                else{
+                    window.open('http://feedback.abneka.tech', '_blank')
+                }
+            }
+        </script>
+    </body>
+</html>
