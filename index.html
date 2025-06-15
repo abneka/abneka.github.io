@@ -36,7 +36,7 @@
 
                         <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
 
-                        <li class="nav__item"><a href="https://drive.google.com/file/d/11i1xSi2fWyKLadVW0ak2CsXGAbXf22JS/view?usp=sharing" target="_blank" class="nav__link">Resume</a></li>
+                        <li class="nav__item"><a href="https://drive.google.com/file/d/1l66h833sspXbJ86WXKVCFiJA7qIsBYht/view?usp=sharing" target="_blank" class="nav__link">Resume</a></li>
                     </ul>
                 </div>
 
@@ -79,7 +79,7 @@
                         <p class="share__description">Full Stack Engineer with 4+ years of experience in developing dynamic web applications. My expertise extends
                           beyond development, encompassing a deep proficiency in data structures and algorithms. I am dedicated to
                           pushing the boundaries of innovation and consistently delivering impactful solutions.</p>
-                        <p class="share__description">Here are a few technologies I’ve been working with recently:</p>
+                        <p class="share__description">Here are a few technologies I've been working with recently:</p>
                         <ul class="skills-list">
                               <li>
                                 C#
@@ -105,9 +105,34 @@
                             <li>
                               C ++
                           </li>
+                          <li>
+                            SQL
+                          </li>
+                          <li>
+                            MongoDB
+                          </li>
+                          <li>
+                            Django
+                          </li>
+                          <li>
+                            CSS
+                          </li>
+                          <li>
+                            Tailwinds
+                          </li>
+                          <li>
+                            Postman
+                          </li>
+                          <li>
+                            Git
+                          </li>
+                          <li>
+                            Docker
+                          </li>
+                          
 
                         </ul>
-                        <a href="https://drive.google.com/file/d/11i1xSi2fWyKLadVW0ak2CsXGAbXf22JS/view?usp=sharing" target="_blank" class="button">Download CV</a>
+                        <a href="https://drive.google.com/file/d/1l66h833sspXbJ86WXKVCFiJA7qIsBYht/view?usp=sharing" target="_blank" class="button">Download CV</a>
                     </div>
 
                     <div class="share__img">
@@ -120,23 +145,36 @@
             <section class="decoration section bd-container" id="decoration">
                 <h2 class="section-title">My Projects</h2>
                 <div class="decoration__container bd-grid">
+                    <div class="decoration__data" onclick="goto('a2sv')">
+                        <img src="assets/img/vertex.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Vertex</h3>
+                        <a class="button button-link">Led development of an advanced DSA learning platform with real-time complexity evaluation and multi-language support</a>
+                    </div>
+
+                    <div class="decoration__data" onclick="goto('radiovision')">
+                        <img src="assets/img/radiovision.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Radiovision</h3>
+                        <a class="button button-link">ML-powered radiography analysis platform achieving 87% accuracy in disease detection with real-time 3D rendering</a>
+                    </div>
+
+                    <div class="decoration__data" onclick="goto('eskalate')">
+                        <img src="assets/img/eskalate.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Eskalate</h3>
+                        <a class="button button-link">A pioneering platform dedicated to empowering businesses by connecting them with Africa's top tech talent.</a>
+                    </div>
+
+                    <div class="decoration__data" onclick="goto('egf')">
+                      <img src="assets/img/egf.png" alt="" class="decoration__img">
+                      <h3 class="decoration__title">EGF Logistics</h3>
+                      <a class="button button-link">Developed a digital logistics management system for EGF Logistics, one of Cambodia's leading freight forwarders.</a>
+                    </div>
+
                     <div class="decoration__data" onclick="goto('h')">
-                        <img src="assets/img/feature_1.png" alt="" class="decoration__img">
+                        <img src="assets/img/habtamu.png" alt="" class="decoration__img">
                         <h3 class="decoration__title">Habtamu Coffee</h3>
                         <a class="button button-link">Worked as freelance worker in habtamu coffee import and export plc company's web page</a>
                     </div>
 
-                    <div class="decoration__data" onclick="goto('g')">
-                        <img src="assets/img/feature-2.jpg" alt="" class="decoration__img">
-                        <h3 class="decoration__title">Github Finder</h3>
-                        <a  class="button button-link">Github finder app using react and github api</a>
-                    </div>
-
-                    <div class="decoration__data" onclick="goto('f')">
-                        <img src="assets/img/feature-3.png" alt="" class="decoration__img">
-                        <h3 class="decoration__title">Feedback app</h3>
-                        <a  class="button button-link">feedback app made by using react, express and mongo</a>
-                    </div>
                 </div>
             </section>
 
@@ -373,14 +411,20 @@
         <script src="assets/js/main.js"></script>
         <script>
             function goto(comm) {
-                if (comm == 'g'){
-                    window.open('http://githubfinder.abneka.tech', '_blank');
+                if (comm == 'a2sv'){
+                    window.open('https://vertex.a2sv.org', '_blank');
+                }
+                else if (comm == 'radiovision'){
+                    window.open('https://radiovision.ai', '_blank');
+                }
+                else if (comm == 'eskalate'){
+                    window.open('https://eskalate.io', '_blank');
                 }
                 else if (comm == 'h'){
-                    window.open('http://habtamucoffee.com', '_blank');
+                    window.open('https://habtamucoffee.com', '_blank');
                 }
-                else{
-                    window.open('http://feedback.abneka.tech', '_blank')
+                else if (comm == 'egf'){
+                    window.open('https://egflogistics.com', '_blank');
                 }
             }
         </script>
