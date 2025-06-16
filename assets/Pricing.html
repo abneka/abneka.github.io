@@ -4,117 +4,134 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Web Development Packages</title>
+  <link rel="stylesheet" href="css/styles.css">
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      background: #f9fafb;
-      color: #333;
+    .pricing__container {
+      padding: 4rem 0 2rem;
     }
 
-    .back-button {
+    .pricing__button {
+      margin: var(--mb-3) var(--mb-3) 0;
       display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: #DA2535;
-      color: white;
-      text-decoration: none;
-      border-radius: 0.5rem;
-      margin-bottom: 2rem;
-      transition: background-color 0.2s;
     }
 
-    .back-button:hover {
-      background-color: #C42130;
-    }
-
-    h1 {
+    .pricing__title {
+      font-size: var(--h2-font-size);
+      color: var(--title-color);
       text-align: center;
-      margin-bottom: 2rem;
-      color: #1f2937;
+      margin-bottom: var(--mb-3);
     }
 
     .table-container {
       overflow-x: auto;
+      margin: 0 var(--mb-3);
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      background: white;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background: var(--container-color);
+      box-shadow: 0 2px 6px rgba(65, 11, 16, .15);
+      border-radius: 1rem;
     }
 
     th, td {
       padding: 1rem;
-      border: 1px solid #e5e7eb;
+      border: 1px solid var(--text-color-light);
       text-align: left;
     }
 
     th {
-      background-color: #f3f4f6;
-      font-weight: 600;
+      background-color: var(--body-color);
+      font-weight: var(--font-semi-bold);
+      color: var(--title-color);
     }
 
     td:first-child {
-      font-weight: 500;
-      background-color: #f9fafb;
+      font-weight: var(--font-semi-bold);
+      background-color: var(--body-color);
+      color: var(--title-color);
     }
 
     .highlight {
-      background-color: #e0f2fe;
-      font-weight: 600;
+      background-color: var(--first-color);
+      color: #fff;
     }
 
-    footer {
-      margin-top: 2rem;
+    .highlight td {
+      color: #fff;
+    }
+
+    .pricing__footer {
+      margin-top: var(--mb-4);
       text-align: center;
-      font-size: 0.95rem;
+      font-size: var(--small-font-size);
+      color: var(--text-color);
     }
 
-    a {
-      color: #3b82f6;
+    .pricing__footer a {
+      color: var(--first-color);
       text-decoration: none;
+      transition: .3s;
+    }
+
+    .pricing__footer a:hover {
+      color: var(--first-color-alt);
     }
 
     @media screen and (max-width: 768px) {
       th, td {
         padding: 0.75rem;
+        font-size: var(--small-font-size);
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .table-container {
+        margin: 0 var(--mb-2);
+      }
+      
+      th, td {
+        padding: 0.5rem;
       }
     }
   </style>
 </head>
 <body>
-  <a href="../index.html" class="back-button">← Back to Home</a>
-  <h1>Web Development Packages</h1>
-  <div class="table-container">
-    <table>
-      <thead>
-        <tr>
-          <th>Tier</th>
-          <th>Starter</th>
-          <th class="highlight">Pro – Most Popular</th>
-          <th>Premium</th>
-          <th>Custom</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Price (ETB)</td><td>40,000 - 60,000</td><td class="highlight">80,000 - 120,000</td><td>150,000 - 250,000</td><td>Contact Sales</td></tr>
-        <tr><td>Number of Pages</td><td>Up to 5 static pages</td><td>Up to 15 dynamic pages</td><td>15+ advanced pages & modules</td><td>Unlimited (based on needs)</td></tr>
-        <tr><td>System Design</td><td>Basic layout, no backend</td><td>Frontend + basic backend</td><td>Advanced backend (dashboards, APIs)</td><td>Scalable systems, custom apps</td></tr>
-        <tr><td>UI/UX Design</td><td>Prebuilt templates</td><td>Custom UI for all pages</td><td>Tailored UX, animations</td><td>Research-based, Figma prototypes</td></tr>
-        <tr><td>SEO Optimization</td><td>Basic (meta tags, speed)</td><td>On-page SEO + sitemap + analytics</td><td>SEO audit + keyword research</td><td>Full SEO strategy & execution</td></tr>
-        <tr><td>Maintenance</td><td>1 month free</td><td>3 months free</td><td>6 months free</td><td>SLA-based support</td></tr>
-        <tr><td>Support</td><td>Email only</td><td>Email + Chat</td><td>Chat, Email, Priority Calls</td><td>Dedicated PM & dev team</td></tr>
-        <tr><td>Delivery Time</td><td>7-10 business days</td><td>2-4 weeks</td><td>4-6 weeks</td><td>Negotiated</td></tr>
-        <tr><td>Hosting/Domain</td><td>Optional add-on</td><td>Optional add-on</td><td>1 year included</td><td>Enterprise-grade setup</td></tr>
-        <tr><td>CMS</td><td>Not included</td><td>Optional</td><td>Included (WordPress, custom)</td><td>Advanced CMS / Headless</td></tr>
-      </tbody>
-    </table>
+  <div class="pricing__button">
+    <a href="../index.html" class="button">← Back to Home</a>
   </div>
-  <footer>
-    📩 Contact: <a href="mailto:anekahiwot@gmail.com">anekahiwot@gmail.com</a> | 
-    <a href="https://linkedin.com/in/abneka" target="_blank">linkedin.com/in/abneka</a>
-  </footer>
+  <div class="pricing__container">
+    <h1 class="pricing__title">Web Development Packages</h1>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Tier</th>
+            <th>Starter</th>
+            <th class="highlight">Pro – Most Popular</th>
+            <th>Premium</th>
+            <th>Custom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Price (ETB)</td><td>40,000 - 60,000</td><td class="highlight">80,000 - 120,000</td><td>150,000 - 250,000</td><td>Contact Sales</td></tr>
+          <tr><td>Number of Pages</td><td>Up to 5 static pages</td><td>Up to 15 dynamic pages</td><td>15+ advanced pages & modules</td><td>Unlimited (based on needs)</td></tr>
+          <tr><td>System Design</td><td>Basic layout, no backend</td><td>Frontend + basic backend</td><td>Advanced backend (dashboards, APIs)</td><td>Scalable systems, custom apps</td></tr>
+          <tr><td>UI/UX Design</td><td>Prebuilt templates</td><td>Custom UI for all pages</td><td>Tailored UX, animations</td><td>Research-based, Figma prototypes</td></tr>
+          <tr><td>SEO Optimization</td><td>Basic (meta tags, speed)</td><td>On-page SEO + sitemap + analytics</td><td>SEO audit + keyword research</td><td>Full SEO strategy & execution</td></tr>
+          <tr><td>Maintenance</td><td>1 month free</td><td>3 months free</td><td>6 months free</td><td>SLA-based support</td></tr>
+          <tr><td>Support</td><td>Email only</td><td>Email + Chat</td><td>Chat, Email, Priority Calls</td><td>Dedicated PM & dev team</td></tr>
+          <tr><td>Delivery Time</td><td>7-10 business days</td><td>2-4 weeks</td><td>4-6 weeks</td><td>Negotiated</td></tr>
+          <tr><td>Hosting/Domain</td><td>Optional add-on</td><td>Optional add-on</td><td>1 year included</td><td>Enterprise-grade setup</td></tr>
+          <tr><td>CMS</td><td>Not included</td><td>Optional</td><td>Included (WordPress, custom)</td><td>Advanced CMS / Headless</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <footer class="pricing__footer">
+      📩 Contact: <a href="mailto:anekahiwot@gmail.com">Email</a> | 
+      <a href="https://linkedin.com/in/abneka" target="_blank">LinkedIn</a>
+    </footer>
+  </div>
 </body>
 </html>
