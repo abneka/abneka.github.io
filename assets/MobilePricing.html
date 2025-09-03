@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Development Packages</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .pricing__container {
+      padding: 4rem 0 2rem;
+    }
+
+    .pricing__button {
+      margin: var(--mb-3) var(--mb-3) 0;
+      display: inline-block;
+    }
+
+    .pricing__title {
+      font-size: var(--h2-font-size);
+      color: var(--title-color);
+      text-align: center;
+      margin-bottom: var(--mb-3);
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 0 var(--mb-3);
+      padding: 2rem 1rem 1rem;
+      background: var(--container-color);
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(65, 11, 16, 0.1);
+      position: relative;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: var(--container-color);
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 1.25rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid var(--text-color-light);
+      transition: all 0.3s ease;
+    }
+
+    th {
+      background-color: var(--body-color);
+      font-weight: var(--font-semi-bold);
+      color: var(--title-color);
+      text-transform: uppercase;
+      font-size: var(--small-font-size);
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+
+    td:first-child {
+      font-weight: var(--font-semi-bold);
+      background-color: var(--body-color);
+      color: var(--title-color);
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+
+    tr:hover td:not(:first-child) {
+      background-color: rgba(218, 37, 53, 0.05);
+      color: var(--first-color);
+    }
+
+    tr:hover .highlight td {
+      background-color: var(--first-color-alt);
+      color: #fff;
+    }
+
+    .highlight {
+      background-color: #c4213047;
+      color: #c42130;
+      position: relative;
+    }
+
+    .highlight1 {
+      background-color: #c4213047;
+      color: #c42130;
+    }
+
+    .highlight::before {
+      content: 'Most Popular';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--first-color);
+      color: #fff;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: var(--small-font-size);
+      font-weight: var(--font-semi-bold);
+      white-space: nowrap;
+      z-index: 2;
+    }
+
+    .highlight td {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .pricing__footer {
+      margin-top: var(--mb-4);
+      text-align: center;
+      font-size: var(--small-font-size);
+      color: var(--text-color);
+    }
+
+    .pricing__footer a {
+      color: var(--first-color);
+      text-decoration: none;
+      transition: .3s;
+      font-weight: var(--font-semi-bold);
+    }
+
+    .pricing__footer a:hover {
+      color: var(--first-color-alt);
+    }
+
+    @media screen and (max-width: 768px) {
+      .table-container {
+        margin: 0 var(--mb-2);
+        padding: 0.5rem;
+      }
+
+      th, td {
+        padding: 1rem 0.75rem;
+        font-size: var(--small-font-size);
+      }
+
+      .highlight::before {
+        font-size: 0.7rem;
+        padding: 2px 8px;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .table-container {
+        margin: 0 var(--mb-1);
+        padding: 0.25rem;
+      }
+      
+      th, td {
+        padding: 0.75rem 0.5rem;
+      }
+    }
+
+    th.highlight {
+      padding-top: 2.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="pricing__button">
+    <a href="../index.html" class="button">← Back to Home</a>
+  </div>
+  <div class="pricing__container">
+    <h1 class="pricing__title">Mobile Development Packages</h1>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Tier</th>
+            <th>Starter</th>
+            <th>Pro</th>
+            <th>Premium</th>
+            <th>Custom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Price (ETB)</td><td>60,000 - 100,000</td><td class="highlight">140,000 - 220,000</td><td>280,000 - 450,000</td><td>Contact Sales</td></tr>
+          <tr><td>App Features</td><td>Simple app with up to 3 screens (static or form-based)</td><td class="highlight1">Up to 10 dynamic screens (basic CRUD, APIs)</td><td>15+ advanced screens & modules (dashboards, payments, maps, notifications)</td><td>Unlimited features & integrations (based on needs)</td></tr>
+          <tr><td>System Design</td><td>Basic frontend, no backend (offline app)</td><td class="highlight1">Frontend + simple backend (API integration, DB)</td><td>Full backend with APIs, authentication, admin dashboards</td><td>Scalable architecture, microservices, enterprise-level</td></tr>
+          <tr><td>UI/UX Design</td><td>Prebuilt templates, minimal customization</td><td class="highlight1">Custom UI for all screens</td><td>Tailored UX, animations, transitions, adaptive layouts</td><td>Research-driven, prototypes in Figma, usability testing</td></tr>
+          <tr><td>Publishing</td><td>Not included</td><td class="highlight1">Google Play or App Store (1 platform)</td><td>Both iOS & Android publishing included</td><td>Multi-platform (iOS, Android, Web, TV, wearables)</td></tr>
+          <tr><td>Maintenance</td><td>1 month free bug fixes</td><td class="highlight1">3 months free bug fixes</td><td>6 months free updates & bug fixes</td><td>SLA-based continuous support</td></tr>
+          <tr><td>Support</td><td>Email only</td><td class="highlight1">Email + Chat</td><td>Priority support (Chat, Email, Calls)</td><td>Dedicated PM + development team</td></tr>
+          <tr><td>Delivery Time</td><td>3-4 weeks</td><td class="highlight1">6-8 weeks</td><td>10-14 weeks</td><td>Negotiated based on scope</td></tr>
+          <tr><td>Hosting/Backend</td><td>Not included</td><td class="highlight1">Basic hosting / Firebase setup</td><td>1 year backend hosting included</td><td>Enterprise-grade hosting & DevOps</td></tr>
+          <tr><td>CMS / Admin Panel</td><td>Not included</td><td class="highlight1">Optional simple admin panel</td><td>Included (custom or 3rd-party)</td><td>Advanced CMS / Headless panel</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <footer class="pricing__footer">
+      📩 Contact: <a href="mailto:anekahiwot@gmail.com">Email</a> | 
+      <a href="https://linkedin.com/in/abneka" target="_blank">LinkedIn</a>
+    </footer>
+  </div>
+</body>
+</html>
+
