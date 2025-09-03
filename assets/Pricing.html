@@ -22,6 +22,37 @@
       margin-bottom: var(--mb-3);
     }
 
+    .pricing__nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: var(--mb-3);
+      flex-wrap: wrap;
+    }
+
+    .pricing__nav a {
+      padding: 0.5rem 1rem;
+      background-color: var(--container-color);
+      color: var(--text-color);
+      text-decoration: none;
+      border-radius: 0.5rem;
+      font-size: var(--small-font-size);
+      font-weight: var(--font-semi-bold);
+      transition: all 0.3s ease;
+      border: 1px solid var(--text-color-light);
+    }
+
+    .pricing__nav a:hover {
+      background-color: var(--first-color);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .pricing__nav a.active {
+      background-color: var(--first-color);
+      color: #fff;
+    }
+
     .table-container {
       overflow-x: auto;
       margin: 0 var(--mb-3);
@@ -172,6 +203,10 @@
   </div>
   <div class="pricing__container">
     <h1 class="pricing__title">Web Development Packages</h1>
+    <div class="pricing__nav">
+      <a href="Pricing.html" class="active">Web Development</a>
+      <a href="./MobilePricing.html">Mobile Development</a>
+    </div>
     <div class="table-container">
       <table>
         <thead>

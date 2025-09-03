@@ -22,6 +22,37 @@
       margin-bottom: var(--mb-3);
     }
 
+    .pricing__nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: var(--mb-3);
+      flex-wrap: wrap;
+    }
+
+    .pricing__nav a {
+      padding: 0.5rem 1rem;
+      background-color: var(--container-color);
+      color: var(--text-color);
+      text-decoration: none;
+      border-radius: 0.5rem;
+      font-size: var(--small-font-size);
+      font-weight: var(--font-semi-bold);
+      transition: all 0.3s ease;
+      border: 1px solid var(--text-color-light);
+    }
+
+    .pricing__nav a:hover {
+      background-color: var(--first-color);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .pricing__nav a.active {
+      background-color: var(--first-color);
+      color: #fff;
+    }
+
     .table-container {
       overflow-x: auto;
       margin: 0 var(--mb-3);
@@ -172,6 +203,10 @@
   </div>
   <div class="pricing__container">
     <h1 class="pricing__title">Mobile Development Packages</h1>
+    <div class="pricing__nav">
+      <a href="Pricing.html">Web Development</a>
+      <a href="./Pricing.html" class="active">Mobile Development</a>
+    </div>
     <div class="table-container">
       <table>
         <thead>
@@ -184,8 +219,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>Price (ETB)</td><td>60,000 - 100,000</td><td class="highlight">140,000 - 220,000</td><td>280,000 - 450,000</td><td>Contact Sales</td></tr>
-          <tr><td>App Features</td><td>Simple app with up to 3 screens (static or form-based)</td><td class="highlight1">Up to 10 dynamic screens (basic CRUD, APIs)</td><td>15+ advanced screens & modules (dashboards, payments, maps, notifications)</td><td>Unlimited features & integrations (based on needs)</td></tr>
+          <tr><td>Price (ETB)</td><td>40,000 - 80,000</td><td class="highlight">100,000 - 140,000</td><td>160,000 - 250,000</td><td>Contact Sales</td></tr>
+          <tr><td>App Features</td><td>Simple app with up to 10 screens (static or form-based)</td><td class="highlight1">Up to 10 dynamic screens (basic CRUD, APIs)</td><td>15+ advanced screens & modules (dashboards, payments, maps, notifications)</td><td>Unlimited features & integrations (based on needs)</td></tr>
           <tr><td>System Design</td><td>Basic frontend, no backend (offline app)</td><td class="highlight1">Frontend + simple backend (API integration, DB)</td><td>Full backend with APIs, authentication, admin dashboards</td><td>Scalable architecture, microservices, enterprise-level</td></tr>
           <tr><td>UI/UX Design</td><td>Prebuilt templates, minimal customization</td><td class="highlight1">Custom UI for all screens</td><td>Tailored UX, animations, transitions, adaptive layouts</td><td>Research-driven, prototypes in Figma, usability testing</td></tr>
           <tr><td>Publishing</td><td>Not included</td><td class="highlight1">Google Play or App Store (1 platform)</td><td>Both iOS & Android publishing included</td><td>Multi-platform (iOS, Android, Web, TV, wearables)</td></tr>
